@@ -1,15 +1,29 @@
 ### Date created
-Include the date you created this project and README file.
+This project was created on June 1st, 2020
 
-### Project Title
-Replace the Project Title
+### Explore US Bikeshare Data
+The project aims to explore bikeshare data in The United States.
 
 ### Description
-Describe what your project is about and what it does
+This project helps to understand US bikeshare data using Python. The user can choose data and filter for a dataset to analyze in an interactive environment, and the program will calculate statistics and display the results.
 
 ### Files used
-Include the files used
+Data files:
+
+chicago.csv
+	
+washington.csv
+	
+new_tork_city.csv
+	
+
+Main code:
+	- bikeshare.py
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+https://docs.python.org/3/index.html
+
+https://pandas.pydata.org/pandas-docs/stable/
+
+https://stackoverflow.com/questions/775049/how-do-i-convert-seconds-to-hours-minutes-and-seconds
 
