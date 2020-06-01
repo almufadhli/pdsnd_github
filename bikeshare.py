@@ -171,7 +171,7 @@ def user_stats(df):
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
-def view_raaw_data(df):
+def view_raw_data(df):
     """ Asks the user if they want to view raw data """
 
     while True:
@@ -211,7 +211,7 @@ def main():
         station_stats(df)
         trip_duration_stats(df)
         user_stats(df)
-        view_raaw_data(df)
+        view_raw_data(df)
 
         restart = input('\nWould you like to restart? Enter yes or no.\n')
         if restart.lower() != 'yes':
