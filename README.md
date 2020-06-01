@@ -13,15 +13,15 @@ Data files
 - chicago.csv
 - washington.csv
 - new_tork_city.csv
-	
+
 
 Main code:
 - bikeshare.py
 
 ### Credits
-https://docs.python.org/3/index.html
+[Python Documentation](https://docs.python.org/3/index.html)
 
-https://pandas.pydata.org/pandas-docs/stable/
+[Pandas Documentation](https://pandas.pydata.org/pandas-docs/stable/)
 
-https://stackoverflow.com/questions/775049/how-do-i-convert-seconds-to-hours-minutes-and-seconds
+[StackOverflow](https://stackoverflow.com/questions/775049/how-do-i-convert-seconds-to-hours-minutes-and-seconds)
 
