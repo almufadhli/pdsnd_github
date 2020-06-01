@@ -37,8 +37,8 @@ def get_filters():
 
     # get user input for day of week (all, monday, tuesday, ... sunday)
     while True:
-        day = input('\nChoose which day of the week, Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, or All?\n').lower()
-        if day in ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'all']:
+        day = input('\nChoose which day of the week, Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, or All?\n')
+        if day.lower() in ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'all']:
             break
         else:
             print('please type the correct name of the day or All\n')
@@ -119,7 +119,8 @@ def station_stats(df):
     print('Most commonly used end station: ', df['End Station'].mode()[0])
 
     # display most frequent combination of start station and end station trip
-    print('The most combination of start and end stations: ', df.groupby(['Start Station', 'End Station']).size().idxmax())
+    combination = df.groupby(['Start Station', 'End Station']).size().idxmax()
+    print('The most combination of start and end stations: ', combination)
 
 
     print("\nThis took %s seconds." % (time.time() - start_time))
@@ -154,7 +155,8 @@ def user_stats(df):
     print('Count of user types:\n', df['User Type'].value_counts(), '\n')
 
     # Display counts of gender
-    if 'Gender' in df: print('Count of gender:\n', df['Gender'].value_counts(), '\n')
+    if 'Gender' in df: 
+        print('Count of gender:\n', df['Gender'].value_counts(), '\n')
 
     # Display earliest, most recent, and most common year of birth
     if 'Birth Year' in df:
