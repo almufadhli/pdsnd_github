@@ -187,6 +187,7 @@ def view_raw_data(df):
             while end_loc <= df.last_valid_index():
                 view_display = input("\n\nDo you wish to continue?: Enter yes or no\n").lower()
 
+                # if the user choses yes the next 5 rows will display, if no then the program will exit this function
                 if view_display == 'yes':
                     start_loc = end_loc
                     end_loc += 5
