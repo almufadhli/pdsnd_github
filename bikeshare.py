@@ -182,18 +182,16 @@ def view_raw_data(df):
         # input validation
         if view_data == 'yes':
             start_loc = 0
-            end_loc = 5
-            print(df.iloc[start_loc:end_loc])
+            print(df.iloc[start_loc:start_loc+5])
             # display the next 5 rows of data each time the user enters 'yes'
             # condition will check if the user didn't reach the last index
-            while end_loc <= df.last_valid_index():
+            while start_loc+5 <= df.last_valid_index():
                 view_display = input("\n\nDo you wish to continue?: Enter yes or no\n").lower()
 
                 # if the user choses yes the next 5 rows will display, if no then the program will exit this function
                 if view_display == 'yes':
-                    start_loc = end_loc
-                    end_loc += 5
-                    print(df.iloc[start_loc:end_loc])
+                    start_loc += 5
+                    print(df.iloc[start_loc:start_loc+5])
                 elif view_display == 'no':
                     return
                 else:
